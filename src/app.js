@@ -17,7 +17,7 @@ window.onload = function() {
     let palosRandom = palos[Math.floor(Math.random() * palos.length)];
     let numerosRandom = numeros[Math.floor(Math.random() * numeros.length)];
 
-    let color = palosRandom == "♥" || numerosRandom == "♦" ? "text-danger" : "";
+    let color = palosRandom == "♥" || palosRandom == "♦" ? "text-danger" : "";
 
     document.getElementById(
       "cartasAleatorias"
@@ -117,7 +117,7 @@ window.onload = function() {
         arrayCartas[index][0] = "A";
       }
       let color =
-        arrayCartas[index][1] == "♥" || arrayCartas[index][0] == "♦"
+        arrayCartas[index][1] == "♥" || arrayCartas[index][1] == "♦"
           ? "text-danger"
           : "";
       document.getElementById(
